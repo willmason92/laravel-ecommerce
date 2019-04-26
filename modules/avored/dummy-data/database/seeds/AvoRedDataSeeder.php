@@ -361,18 +361,8 @@ class AvoRedDataSeeder extends Seeder
         $homePage = Page::create(
             ['name' => 'Home Page',
             'slug' => 'home-page',
-            'content' => '
-%%% avored-banner %%%
-
-##### HOME PAGE FOR AvoRed E COMMERCE LARAVEL OPEN SOURCE SHOPPING CART
-
-Please star us on [https://github.com/avored/laravel-ecommerce](https://github.com/avored/laravel-ecommerce)
-Like us on Facebook : [https://www.facebook.com/avored](https://www.facebook.com/avored)
-Follow us on Twitter:  [https://twitter.com/avoredecommerce](https://twitter.com/avoredecommerce)
-
-%%% avored-featured %%%
-            ',
-            'meta_title' => 'Home Page - AvoRed E commerce']
+            'content' => '',
+            'meta_title' => 'Home Page - Found & Made']
         );
         Configuration::create(
             ['configuration_key' => 'general_home_page',
@@ -390,7 +380,7 @@ Follow us on Twitter:  [https://twitter.com/avoredecommerce](https://twitter.co
             ['name' => 'Term & Condition',
             'slug' => 'term-condition',
             'content' => $faker->text(200),
-            'meta_title' => 'Term & Condition - AvoRed E commerce']
+            'meta_title' => 'Term & Condition - Found & Made']
         );
         Configuration::create(
             ['configuration_key' => 'general_term_condition_page',
